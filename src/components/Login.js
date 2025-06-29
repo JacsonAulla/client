@@ -16,7 +16,7 @@ function Login({ setIsAuth }) {
       return;
     }
 
-    Axios.post("http://localhost:3001/login", {
+    Axios.post("https://server-iie0.onrender.com/login", {
       username,
       password,
     })

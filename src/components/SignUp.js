@@ -15,7 +15,7 @@ function SignUp({ setIsAuth }) {
       return;
     }
 
-    Axios.post("http://localhost:3001/signup", user)
+    Axios.post("https://server-iie0.onrender.com/signup", user)
       .then((res) => {
         const { token, userId, username, hashedPassword } = res.data;
 
